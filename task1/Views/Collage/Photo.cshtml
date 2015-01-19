@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Photo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Photo", "Collage", FormMethod.Post, new { enctype = "multipart/form-data", style = "padding-top: 15px;position:absolute" }))
+{
+    
+        <div >Выбрать файлы с пеки</div>
+   
+         <input multiple="multiple" type="file" name="File1" id="File1" size="1">
+       
+   
+   
+    <input style="float: left; height: 36px" class="btn btn-default" id="btnUpload" type="submit" value="Отправить" />
+}

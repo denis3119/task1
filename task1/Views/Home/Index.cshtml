@@ -1,0 +1,12 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    <h2>Здравствуй,@{
+                       var userName = User.Identity.Name;
+                       Write(userName != "" ? userName : "Аноним");
+                   } </h2>
+    
+}
